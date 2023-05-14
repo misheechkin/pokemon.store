@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap );
+
+body {
+    font-family: Poppins, serif;
+    background: linear-gradient(45deg, rgba(0, 40, 255, 0.91) 23%, #E8B90F 66%, #E8B90F 100%, #E8B90F 100%);
+}
+
+p {
+    color: aliceblue;
+}
+
+.nav-link {
+    color: rgb(237, 93, 93);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(203, 203, 203);
+}
+
+.navbar-brand img {
+    width: 38px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(237, 93, 93)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.sidebar {
+    color: aliceblue;
+}
+
+.card {
+    background-color: rgb(46, 42, 42);
+    color: aliceblue;
+}
+
+.card a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.slide-text,
+.footer-text {
+    color: aliceblue;
+    margin: auto auto;
+}
+
+.footer-text>a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.188)
+}
+
+.logo {
+    width: 450px;
+}
+
+.go-anim{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .logo {
+        width: 350px;
+    }
+}
